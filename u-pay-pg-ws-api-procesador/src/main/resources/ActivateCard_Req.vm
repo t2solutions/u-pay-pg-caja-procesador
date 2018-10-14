@@ -1,0 +1,14 @@
+<nxs:DATA
+	xmlns:nxs="http://xsd.nexuschile.cl/Prepaid/ActivateCard/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/ActivateCard/Req-v2017.10 ActivateCard_Req.xsd ">
+	<nxs:BankCode>${body.data.bankCode}</nxs:BankCode>
+	<nxs:ReasonCode>${body.data.reasonCode}</nxs:ReasonCode>
+	<nxs:Reason>${body.data.Reason}</nxs:Reason>
+	<nxs:ContractIdentifier>${body.data.ContractIdentifier}</nxs:ContractIdentifier>
+	<nxs:CardSequenceNumber>${body.data.CardSequenceNumber}</nxs:CardSequenceNumber>
+	<nxs:ApplRegNumber>${body.data.ApplRegNumber}</nxs:ApplRegNumber>
+	<nxs:ApplicationSource>${body.data.ApplicationSource}</nxs:ApplicationSource>
+	<nxs:UserInfo>${body.data.UserInfo}</nxs:UserInfo>
+</nxs:DATA>

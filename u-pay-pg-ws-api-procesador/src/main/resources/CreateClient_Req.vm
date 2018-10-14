@@ -1,0 +1,45 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/CreateClient/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateClient/Req-v2017.10 CreateClient_Req.xsd ">	
+         <req:BankCode>${body.data.bankCode}</req:BankCode>                 
+         <req:ContractScope>${body.data.contractScope}</req:ContractScope>         
+		 <req:BankCode>${body.data.bankCode}</req:BankCode>
+         <req:ReasonCode>${body.data.reasonCode}</req:ReasonCode>
+         <req:Reason>${body.data.reason}</req:Reason>
+         <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+         <req:ClientTypeCode>${body.data.clientTypeCode}</req:ClientTypeCode>
+         <req:LanguageCode>${body.data.languageCode}</req:LanguageCode>
+         <req:MaritalStatusCode>${body.data.maritalStatusCode}</req:MaritalStatusCode>
+         <req:SalutationCode>${body.data.salutationCode}</req:SalutationCode>
+         <req:Branch>${body.data.branch}</req:Branch>
+	     <req:ServiceGroup>${body.data.serviceGroup}</req:ServiceGroup>
+         <req:ShortName>${body.data.shortName}</req:ShortName>
+         <req:Gender>${body.data.gender}</req:Gender>
+         <req:FirstName>${body.data.firstName}</req:FirstName>         
+         <req:MiddleName>${body.data.middleName}</req:MiddleName>        
+         <req:LastName>${body.data.lastName}</req:LastName>
+         <req:BirthDate>${body.data.birthDate}</req:BirthDate>       
+         <req:BirthPlace>${body.data.birthPlace}</req:BirthPlace>        
+         <req:BirthName>${body.data.birthName}</req:BirthName>        
+         <req:Citizenship>${body.data.citizenship}</req:Citizenship>
+         <req:TaxBracket>${body.data.taxBracket}</req:TaxBracket>
+         <req:IndividualTaxpayerNumber>${body.data.individualTaxpayerNumber}</req:IndividualTaxpayerNumber>
+         <req:CompanyName>${body.data.companyName}</req:CompanyName>
+         <req:Trademark>${body.data.trademark}</req:Trademark>
+         <req:Department>${body.data.department}</req:Department>
+         <req:Position>${body.data.position}</req:Position>        
+         <req:IdentityCardNumber>${body.data.identityCardNumber}</req:IdentityCardNumber>
+         <req:IdentityCardDetails>${body.data.identityCardDetails}</req:IdentityCardDetails>
+         <req:ClientNumber>${body.data.clientNumber}</req:ClientNumber>
+         <req:SecretPhrase>${body.data.secretPhrase}</req:SecretPhrase>
+         <req:AddInfo01>${body.data.addInfo01}</req:AddInfo01>
+         <req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+         <req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+         <req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+         <req:AddDate01>${body.data.addDate01}</req:AddDate01>
+         <req:AddDate02>${body.data.addDate02}</req:AddDate02>
+         <req:UserInfo>${body.data.userInfo}</req:UserInfo>	
+</req:DATA>

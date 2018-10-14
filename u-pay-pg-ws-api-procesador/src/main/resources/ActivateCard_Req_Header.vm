@@ -1,0 +1,8 @@
+<ns:HeaderRequest xmlns:ns="http://xsd.nexuschile.cl/Credit/Common/Enterprise/HeaderRequest/201707">
+ <ns:Common>
+    <ns:ServiceID>${body.data.serviceID}</ns:ServiceID>
+    <ns:ServiceVersion>${body.data.serviceVersion}</ns:ServiceVersion>
+    <ns:Product>${body.data.product}</ns:Product>
+    <ns:RequestDate>${body.data.requestDate}</ns:RequestDate>
+ </ns:Common>
+</ns:HeaderRequest>

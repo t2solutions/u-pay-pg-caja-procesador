@@ -1,0 +1,11 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "resp:CreatedAddress": "createdAddress",
+      "resp:RetCode": "returnCode",
+      "resp:RetMsg": "retMsg",
+      "resp:FailPoint": "failPoint"
+    }
+  }
+]

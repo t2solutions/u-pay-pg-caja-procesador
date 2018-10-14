@@ -1,0 +1,28 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/CreateAddress/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateAddress/Req-v2017.10 CreateAddress_Req.xsd ">
+	 <req:BankCode>${body.data.bankCode}</req:BankCode>
+	 <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+	 <req:ClientTypeCode>${body.data.clientTypeCode}</req:ClientTypeCode>
+	 <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+	 <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+	 <req:Reason>${body.data.reason}</req:Reason>
+	 <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+	 <req:AddressTypeCode>${body.data.addressTypeCode}</req:AddressTypeCode>
+	 <req:DeliveryTypeCode>${body.data.deliveryTypeCode}</req:DeliveryTypeCode>
+	 <req:Line1>${body.data.line1}</req:Line1>
+	 <req:Line2>${body.data.line2}</req:Line2>
+	 <req:City>${body.data.city}</req:City>
+	 <req:District>${body.data.district}</req:District>
+	 <req:Region>${body.data.region}</req:Region>
+	 <req:Country>${body.data.country}</req:Country>
+	 <req:ZipCode>${body.data.zipcode}</req:ZipCode>
+	 <req:HomePhone>${body.data.homePhone}</req:HomePhone>
+	 <req:MobilePhone>${body.data.mobilePhone}</req:MobilePhone>
+	 <req:Email>${body.data.email}</req:Email>
+	 <req:ActivationDate>${body.data.activationDate}</req:ActivationDate>
+	 <req:DeactivationDate>${body.data.deactivationDate}</req:DeactivationDate>
+	 <req:UserInfo>${body.data.userInfo}</req:UserInfo>		
+</req:DATA>

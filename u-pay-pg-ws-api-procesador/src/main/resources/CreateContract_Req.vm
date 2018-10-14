@@ -1,0 +1,20 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/CreateContract/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateContract/Req-v2017.10 CreateContract_Req.xsd ">	
+		 <req:BankCode>${body.data.bankCode}</req:BankCode>
+		 <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+		 <req:ClientSearchCategory>${body.data.clientSearchCategory}</req:ClientSearchCategory>
+		 <req:ProductCode>${body.data.productCode}</req:ProductCode>
+		 <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+		 <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+		 <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+		 <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+		 <req:ServiceGroup>${body.data.serviceGroup}</req:ServiceGroup>
+		 <req:AddInfo01>${body.data.addInfo01}</req:AddInfo01>
+		 <req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+		 <req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+		 <req:CloseDate>${body.data.closeDate}</req:CloseDate>
+		 <req:UserInfo>${body.data.userInfo}</req:UserInfo>
+ </req:DATA>

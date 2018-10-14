@@ -1,0 +1,29 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/CreateCard/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateCard/Req-v2017.10 CreateCard_Req.xsd ">	
+         <req:BankCode>${body.data.bankCode}</req:BankCode>
+         <req:ContractScope>${body.data.contractScope}</req:ContractScope>
+         <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+         <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+         <req:ProductIdentifier>${body.data.productIdentifier}</req:ProductIdentifier>
+         <req:ProductCode>${body.data.productCode}</req:ProductCode>
+         <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+         <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+         <req:CardSequenceNumber>${body.data.cardSequenceNumber}</req:CardSequenceNumber>
+         <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+         <req:EmbossedTitleCode>${body.data.embossedTitleCode}</req:EmbossedTitleCode>
+         <req:ChipSchemeCode>${body.data.chipSchemeCode}</req:ChipSchemeCode>
+         <req:RiskSchemeCode>${body.data.riskSchemeCode}</req:RiskSchemeCode>
+         <req:RiskFactor>${body.data.riskFactor}</req:RiskFactor>
+         <req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
+         <req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+         <req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+         <req:Afinity>${body.data.afinity}</req:Afinity>
+         <req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+         <req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+         <req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+         <req:UserInfo>${body.data.userInfo}</req:UserInfo>	
+</req:DATA>
