@@ -1,0 +1,28 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/CreateSupplementaryCard/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateSupplementaryCard/Req-v2017.10 CreateSupplementaryCard_Req.xsd ">		         
+		 <req:BankCode>${body.data.bankCode}</req:BankCode>
+		 <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+         <req:ClientSearchCategory>${body.data.clientSearchCategory}</req:ClientSearchCategory>
+         <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+		 <req:ProductCode>${body.data.productCode}</req:ProductCode>
+         <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+         <req:EmbossedTitleCode>${body.data.embossedTitleCode}</req:EmbossedTitleCode>
+		 <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+		 <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+         <req:ChipSchemeCode>${body.data.chipSchemeCode}</req:ChipSchemeCode>
+         <req:RiskSchemeCode>${body.data.riskSchemeCode}</req:RiskSchemeCode>
+         <req:RiskFactor>${body.data.riskFactor}</req:RiskFactor>
+         <req:EmbossedTitle>${body.data.embossedTitle}</req:EmbossedTitle>
+         <req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
+         <req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+         <req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+         <req:Afinity>${body.data.affinity}</req:Afinity>
+         <req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+         <req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+         <req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+         <req:UserInfo>${body.data.userInfo}</req:UserInfo>		 		 
+ </req:DATA>
