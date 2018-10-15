@@ -1,0 +1,19 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/CreateNamelessCard/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateNamelessCard/Req-v2017.10 CreateNamelessCard_Req.xsd ">		
+		 <req:BankCode>${body.data.bankCode}</req:BankCode>
+		 <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+		 <req:ProductCode>${body.data.productCode}</req:ProductCode>
+         <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+		 <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+		 <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+         <req:ChipSchemeCode>${body.data.chipSchemeCode}</req:ChipSchemeCode>
+         <req:RiskSchemeCode>${body.data.riskSchemeCode}</req:RiskSchemeCode>
+         <req:RiskFactor>${body.data.riskFactor}</req:RiskFactor>
+         <req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
+         <req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+         <req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+		 <req:UserInfo>${body.data.userInfo}</req:UserInfo>
+ </req:DATA>
