@@ -1,0 +1,17 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/OpenEvent/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/OpenEvent/Req-v2017.10 OpenEvent_Req.xsd ">	
+		 <req:BankCode>${body.data.bankCode}</req:BankCode>
+         <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+         <req:EventCode>${body.data.eventCode}</req:EventCode>
+         <req:Amount>${body.data.amount}</req:Amount>
+         <req:Currency>${body.data.currency}</req:Currency>
+         <req:ParamString>${body.data.paramString}</req:ParamString>
+         <req:StartDate>${body.data.startDate}</req:StartDate>
+         <req:EndDate>${body.data.endDate}</req:EndDate>
+         <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         <req:Reason>${body.data.reason}</req:Reason>
+         <req:UserInfo>${body.data.userInfo}</req:UserInfo>		 	
+ </req:DATA>
