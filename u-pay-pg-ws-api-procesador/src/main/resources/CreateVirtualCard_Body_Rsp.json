@@ -1,0 +1,12 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "resp:RetCode": "returnCode",
+      "resp:RetMsg": "retMsg",
+      resp:CardNumber": "cardNumber",
+      resp:ExpiryDate": "expiryDate",
+      resp:CardholderName": "CardholderName"
+    }
+  }
+]
