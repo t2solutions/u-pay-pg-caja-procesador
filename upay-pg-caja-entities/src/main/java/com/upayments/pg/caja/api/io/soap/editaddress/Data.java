@@ -37,7 +37,7 @@ public class Data implements Serializable {
 	private String mobilePhone; //MobilePhone
 	private String email; //Email
 	private String activationDate; //ActivationDate
-	private String DeactivationDate; //DeactivationDate
+	private String deactivationDate; //DeactivationDate
 	private String userInfo; //UserInfo	
 	
 	public Data() {
@@ -199,11 +199,11 @@ public class Data implements Serializable {
 
 	@JsonProperty("DeactivationDate")
 	public String getDeactivationDate() {
-		return DeactivationDate;
+		return deactivationDate;
 	}
 
 	public void setDeactivationDate(String deactivationDate) {
-		DeactivationDate = deactivationDate;
+		this.deactivationDate = deactivationDate;
 	}
 
 	@JsonProperty("ContractIdentifier")
