@@ -1,4 +1,4 @@
-package com.upayment.camel;
+package com.upayment.camel.processor;
 
 import java.util.HashMap;
 import java.util.Map;
