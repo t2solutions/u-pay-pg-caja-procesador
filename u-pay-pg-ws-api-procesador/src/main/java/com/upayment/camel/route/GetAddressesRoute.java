@@ -20,9 +20,9 @@ public class GetAddressesRoute extends RestRouteBuilder {
 	    	.outType(String.class)
 	    	.consumes("application/json")
 	    	.produces("text/plain")
-	    	.to("direct:EditCard");	
+	    	.to("direct:GetAddresses");	
 	    
-	    from("direct:EditCard")
+	    from("direct:GetAddresses")
 	    	.handleFault()
 		    .setProperty("completeRequest",simple("${body}"))
 		    .log("(!) post guardado completeRequest")
