@@ -3,7 +3,7 @@
     "operation": "shift",
     "spec": {
       "resp:RetCode": "returnCode",
-      "resp:RetMsg": "retMsg",
+      "resp:RetMsg": "retMsg"
     }
   }
 ]
