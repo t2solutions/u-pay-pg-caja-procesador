@@ -1,0 +1,28 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/EditCard/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/EditCard/Req-v2017.10 EditCard_Req.xsd ">		
+		<req:BankCode>${body.data.bankCode}</req:BankCode>
+		<req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+		<!--Optional:-->
+		<req:Reason>${body.data.reason}</req:Reason>
+		<req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+		<!--Optional:-->
+		<req:EmbossedTitleCode>${body.data.embossedTitleCode}</req:EmbossedTitleCode>
+		<!--Optional:-->
+		<req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
+		<!--Optional:-->
+		<req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+		<!--Optional:-->
+		<req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+		<!--Optional:-->
+		<req:Afinity>${body.data.afinity}</req:Afinity>
+		<!--Optional:-->
+		<req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+		<!--Optional:-->
+		<req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+		<!--Optional:-->
+		<req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+		<req:UserInfo>${body.data.userInfo}</req:UserInfo>	 	
+ </req:DATA>
