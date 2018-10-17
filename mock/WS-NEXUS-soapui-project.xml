@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://xsd.nexuschile.cl/Credit/Common/Enterprise/HeaderResponse/201707" xmlns:resp="http://xsd.nexuschile.cl/Prepaid/ActivateCard/Resp-v2017.10">
+   <soapenv:Header>
+      <ns:HeaderResponse>
+         <ns:Common>
+            <ns:ServiceID>1</ns:ServiceID>
+            <ns:ResponseDate/>
+         </ns:Common>
+      </ns:HeaderResponse>
+   </soapenv:Header>
+   <soapenv:Body>
+      <resp:DATA>
+         <!--Optional:-->
+         <resp:RetCode>1</resp:RetCode>
+         <!--Optional:-->
+         <resp:RetMsg>OK</resp:RetMsg>
+      </resp:DATA>
+   </soapenv:Body>
+</soapenv:Envelope>
