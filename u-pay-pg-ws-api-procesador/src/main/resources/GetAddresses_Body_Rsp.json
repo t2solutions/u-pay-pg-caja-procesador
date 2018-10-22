@@ -2,9 +2,10 @@
   {
     "operation": "shift",
     "spec": {
-      "resp:RetCode": "returnCode",
-      "resp:RetMsg": "retMsg"
-      
+      "RetCode": "returnCode",
+      "RetMsg": "retMsg"
+      "FailPoint": "failPoint",
+      "Addresses": "addresses"
     }
   }
 ]

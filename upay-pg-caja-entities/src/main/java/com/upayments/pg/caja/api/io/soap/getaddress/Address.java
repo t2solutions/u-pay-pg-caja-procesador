@@ -15,7 +15,7 @@ public class Address implements Serializable {
 		super();
 	}
 	
-	@JsonProperty("Addresses")
+	@JsonProperty("AddressDetailsRecord")
 	public List<AddressDetailsRecord> getAddresses() {
 		return addresses;
 	}
