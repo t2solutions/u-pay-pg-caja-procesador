@@ -1,0 +1,13 @@
+<req:GetClientByRutReq xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetClientByRut/Req-v2017.10"
+xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetAddresses/Req-v2017.10 GetClientByRutReq_Req.xsd ">
+         <req:Data>
+            <req:BankCode>${body.data.bankCode}</req:BankCode>
+            <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+            <req:ClientSearchCategory>${body.data.clientSearchCategory}</req:ClientSearchCategory>
+            <!--Optional:-->
+            <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+            <req:UserInfo>${body.data.userInfo}</req:UserInfo>
+         </req:Data> 
+ </req:GetClientByRutReq>
