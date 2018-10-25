@@ -1,0 +1,8 @@
+<req:DATA xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetContractByID/Req-v2017.10"
+xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetContractByID/Req-v2017.10 GetContractByID_Req.xsd ">
+     <req:BankCode>${body.data.bankCode}</req:BankCode>
+     <req:ID>${body.data.id}</req:ID>
+     <req:UserInfo>${body.data.userInfo}</req:UserInfo>
+</req:DATA>

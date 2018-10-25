@@ -43,7 +43,8 @@ public class GetContractByIdRoute extends RestRouteBuilder {
 		    //.log("(!) post envio a procesa header")		
 		    
 		    .log("BODY PRE VM -> ${body}")
-		    .to("velocity:GetClientByRut_Req.vm")
+		    .unmarshal().json(JsonLibrary.Jackson, DataInput.class)
+		    .to("velocity:GetContractById_Req.vm")
 		    .log("HEADER IDA -> ${in.header.CamelSpringWebServiceSoapHeader}")
 		    .log("BODY IDA -> ${body}")
 		    .log("DESTINO: -> {{soap.remote.GetContractByIdOp.ep}} ACCION: -> {{soap.remote.GetContractByIdOp.action}} ")
