@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import com.upayment.camel.RestRouteBuilder;
 import com.upayment.camel.util.ConstantesCamel;
 
-import com.upayments.pg.caja.api.io.soap.getclientbyrut.DataInput;
+import com.upayments.pg.caja.api.io.soap.getcontractbyid.DataInput;
 
 @Component(value="getContractByIdRoute")
 public class GetContractByIdRoute extends RestRouteBuilder {
@@ -24,15 +24,24 @@ public class GetContractByIdRoute extends RestRouteBuilder {
 	    	.to("direct:GetContractById");	
 	    
 	    from("direct:GetContractById")
-	    	.handleFault()
+	    	.handleFault()	    	
 		    .setProperty("completeRequest",simple("${body}"))
 		    .log("(!) post guardado completeRequest")
 		    .unmarshal().json(JsonLibrary.Jackson, DataInput.class)
 		    .log("(!) post serializado")
+		    .setBody(simple("${body.header}"))
+		    .log("(!) pre envio a procesa header")
+		    .process("commonHeaderPrepare")
+		    .log("(!) post envio a procesa header")		    	
+		    .setBody(simple("${property.completeRequest}"))
+	    		    	
+		    //.setProperty("completeRequest",simple("${body}"))
+		    //.log("(!) post guardado completeRequest")
+		    //.unmarshal().json(JsonLibrary.Jackson, DataInput.class)
+		    //.log("(!) post serializado")		    
+		    //.process("emptyHeaderPrepare")
+		    //.log("(!) post envio a procesa header")		
 		    
-		    .process("emptyHeaderPrepare")
-		    
-		    .log("(!) post envio a procesa header")		    		    
 		    .log("BODY PRE VM -> ${body}")
 		    .to("velocity:GetClientByRut_Req.vm")
 		    .log("HEADER IDA -> ${in.header.CamelSpringWebServiceSoapHeader}")
