@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" 
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-xmlns:resp="http://xsd.nexuschile.cl/Prepaid/GetClassifierByContract/Req-v2017.10">
+xmlns:resp="http://xsd.nexuschile.cl/Prepaid/GetClassifierByContract/Resp-v2017.10">
 <!-- <xsl:variable name="retCode"  select="'ASDF'" />  -->
 <xsl:output method="xml" />
 <xsl:param name="retCode" /> 
 <xsl:param name="retMsg" />
-<xsl:param name="failPoint" />
 <xsl:template match="//resp:Data">
 <Data>
     <RetCode><xsl:value-of select="$retCode" /></RetCode>
