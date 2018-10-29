@@ -1,0 +1,9 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetVirtualCardByContract/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetVirtualCardByContract/Req-v2017.10 GetVirtualCardByContract_Req.xsd ">	
+		 <req:BankCode>${body.data.bankCode}</req:BankCode>
+         <req:ContractNumber>${body.data.contractNumber}</req:ContractNumber>
+         <req:UserInfo>${body.data.userInfo}</req:UserInfo>		 		 
+ </req:DATA>
