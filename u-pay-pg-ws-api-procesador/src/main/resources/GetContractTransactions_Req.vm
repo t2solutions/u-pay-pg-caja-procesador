@@ -1,0 +1,16 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetContractTransactions/Req-v2017.10"
+	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetContractTransactions/Req-v2017.10 GetContractTransactions_Req.xsd ">
+     <req:BankCode>${body.data.bankCode}</req:BankCode>
+     <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+     <!--Optional:-->
+     <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+     <req:StartDate>${body.data.startDate}</req:StartDate>
+     <req:EndDate>${body.data.endDate}</req:EndDate>
+     <req:AuthFilterMode>${body.data.authFilterMode}</req:AuthFilterMode>
+     <!--Optional:-->
+     <req:IsAuthorisation>${body.data.isAuthorisation}</req:IsAuthorisation>
+     <req:UserInfo>${body.data.userInfo}</req:UserInfo>
+</req:DATA>

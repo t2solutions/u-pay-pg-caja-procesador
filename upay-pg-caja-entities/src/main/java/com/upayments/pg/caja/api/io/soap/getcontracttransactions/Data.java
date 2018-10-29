@@ -1,7 +1,6 @@
 package com.upayments.pg.caja.api.io.soap.getcontracttransactions;
 
 import java.io.Serializable;
-import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -26,7 +25,8 @@ public class Data implements Serializable {
 	public Data() {
 		super();
 	}
-
+	
+	@JsonProperty("BankCode")
 	public String getBankCode() {
 		return bankCode;
 	}
@@ -35,6 +35,7 @@ public class Data implements Serializable {
 		this.bankCode = bankCode;
 	}
 
+	@JsonProperty("ContractIdentifier")
 	public String getContractIdentifier() {
 		return contractIdentifier;
 	}
@@ -53,6 +54,7 @@ public class Data implements Serializable {
 		this.contractRelation = contractRelation;
 	}
 
+	@JsonProperty("StartDate")
 	public String getStartDate() {
 		return startDate;
 	}
@@ -61,6 +63,7 @@ public class Data implements Serializable {
 		this.startDate = startDate;
 	}
 
+	@JsonProperty("EndDate")
 	public String getEndDate() {
 		return endDate;
 	}
@@ -69,6 +72,7 @@ public class Data implements Serializable {
 		this.endDate = endDate;
 	}
 
+	@JsonProperty("AuthFilterMode")
 	public String getAuthFilterMode() {
 		return authFilterMode;
 	}
@@ -87,6 +91,7 @@ public class Data implements Serializable {
 		this.isAuthorisation = isAuthorisation;
 	}
 
+	@JsonProperty("UserInfo")
 	public String getUserInfo() {
 		return userInfo;
 	}
@@ -94,18 +99,5 @@ public class Data implements Serializable {
 	public void setUserInfo(String userInfo) {
 		this.userInfo = userInfo;
 	}
-	
-	/*
-	@JsonProperty("ContractBalanceListDetailsRecord")
-	@JsonInclude(Include.NON_DEFAULT)		
-	public List<CSWTransactionDetailsRecord> getCswTransactionDetailsRecord() {
-		return cswTransactionDetailsRecord;
-	}
-
-	public void setCswTransactionDetailsRecord(
-			List<CSWTransactionDetailsRecord> cswTransactionDetailsRecord) {
-		this.cswTransactionDetailsRecord = cswTransactionDetailsRecord;
-	}
-	*/
 
 }
