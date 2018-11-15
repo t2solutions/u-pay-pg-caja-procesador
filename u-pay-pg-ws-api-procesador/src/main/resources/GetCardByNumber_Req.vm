@@ -1,0 +1,10 @@
+<req:GetCardByNumberReq xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetCardByNumber/Req-v2017.10"
+xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetCardByNumber/Req-v2017.10 GetCardByNumberReq_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.getCardByNumberReq.data.bankCode}</req:BankCode>
+        <req:CardNumber>${body.getCardByNumberReq.data.cardNumber}</req:CardNumber>
+        <req:UserInfo>${body.getCardByNumberReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+</req:GetCardByNumberReq>
