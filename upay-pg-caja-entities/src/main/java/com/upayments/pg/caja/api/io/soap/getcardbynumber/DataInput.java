@@ -8,13 +8,13 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.upayments.pg.caja.api.io.soap.EmptyHeaderRequest;
 import com.upayments.pg.caja.api.io.soap.HeaderRequest;
 
-@JsonPropertyOrder({ "Header", "GetCardByRutReq" })
+@JsonPropertyOrder({ "Header", "GetCardByNumberReq" })
 public class DataInput implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	private EmptyHeaderRequest header;
-	private GetCardByNumberReq getCardByRutReq;
+	private GetCardByNumberReq getCardByNumberReq;
 
 	public DataInput() {
 		super();
@@ -28,14 +28,14 @@ public class DataInput implements Serializable {
 		this.header = header;
 	}
 	
-	@JsonProperty("GetCardByRutReq")
-	public GetCardByNumberReq getGetCardByRutReq() {
-		return getCardByRutReq;
+	@JsonProperty("GetCardByNumberReq")
+	public GetCardByNumberReq getGetCardByNumberReq() {
+		return getCardByNumberReq;
 	}
 	
-	public void setGetCardByContractReq(
-			GetCardByNumberReq getCardByRutReq) {
-		this.getCardByRutReq = getCardByRutReq;
+	public void setGetCardByNumberReq(
+			GetCardByNumberReq getCardByNumberReq) {
+		this.getCardByNumberReq = getCardByNumberReq;
 	}
 
 	
