@@ -1,0 +1,13 @@
+<req:ClientClassifierReq xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetClassifierByRut/Req-v2017.10"
+xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetClassifierByRut/Req-v2017.10 GetClassifierByRut_Req.xsd ">
+	<req:Data>
+	    <req:BankCode>${body.cntByClassReq.data.bankCode}</req:BankCode>
+	    <req:ClientIdentifier>${body.cntByClassReq.data.clientIdentifier}</req:ClientIdentifier>
+	    <req:ClientSearchCategory>${body.cntByClassReq.data.clientSearchCategory}</req:ClientSearchCategory>
+	    <!-- Optional -->
+	    <req:ContractRelation>${body.cntByClassReq.data.contractRelation}</req:ContractRelation>
+	    <req:UserInfo>${body.cntByClassReq.data.userInfo}</req:UserInfo>     
+	</req:Data>
+</req:ClientClassifierReq>
