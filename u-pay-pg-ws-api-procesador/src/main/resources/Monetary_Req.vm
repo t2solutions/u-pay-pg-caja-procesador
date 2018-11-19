@@ -1,0 +1,70 @@
+<req:DATA
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/Monetary/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/Monetary/Req-v2017.10 Monetary_Req.xsd ">	
+         <req:BankCode>${body.data.bankCode}</req:BankCode>
+		 #if (${body.data.transactionId}) 
+		 	 <!--Optional:-->
+        	 <req:TransactionID>${body.data.transactionId}</req:TransactionID>
+		 #end         
+         <req:UniqueRefNumber>${body.data.uniqueRefNumber}</req:UniqueRefNumber>
+         <req:MsgCode>${body.data.msgCode}</req:MsgCode>
+         #if (${body.data.rrn})
+           <!--Optional:-->
+         	<req:RRN>${body.data.rrn}</req:RRN>
+         #end 
+         #if (${body.data.payerContractScope})
+         	<!--Optional:-->
+         	<req:PayerContractScope>${body.data.payerContractScope}</req:PayerContractScope>
+         #end
+         <req:PayerContractIdentifier>${body.data.payerContractIdentifier}</req:PayerContractIdentifier>
+          #if (${body.data.payerContractRelation})
+         	<!--Optional:-->
+         	<req:PayerContractRelation>${body.data.payerContractRelation}</req:PayerContractRelation>
+         #end
+         #if (${body.data.payerCardSequenceNumber})
+        	 <!--Optional:-->
+        	 <req:PayerCardSequenceNumber>${body.data.payerCardSequenceNumber}</req:PayerCardSequenceNumber>
+         #end
+         #if (${body.data.payerExpirationDate})
+         	<!--Optional:-->
+        	 <req:PayerExpirationDate>${body.data.payerExpirationDate}</req:PayerExpirationDate>
+         #end
+         #if (${body.data.payeeContractScope})
+         	<!--Optional:-->
+         	<req:PayeeContractScope>${body.data.payeeContractScope}</req:PayeeContractScope>
+         #end         
+         <req:PayeeContractIdentifier>${body.data.payeeContractIdentifier}</req:PayeeContractIdentifier>
+          #if (${body.data.payeeContractRelation})
+         	<!--Optional:-->
+         	<req:PayeeContractRelation>${body.data.payeeContractRelation}</req:PayeeContractRelation>
+         #end
+         #if (${body.data.payeeCardSequenceNumber})
+         	<!--Optional:-->
+         	<req:PayeeCardSequenceNumber>${body.data.payeeCardSequenceNumber}</req:PayeeCardSequenceNumber>
+         #end
+         #if (${body.data.payeeExpirationDate})
+         	<!--Optional:-->
+         	<req:PayeeExpirationDate>${body.data.payeeExpirationDate}</req:PayeeExpirationDate>
+         #end
+         <req:Amount>${body.data.amount}</req:Amount>
+         <req:Currency>${body.data.currency}</req:Currency>
+         #if (${body.data.transactionAttributes})
+         	<!--Optional:-->
+         	<req:TransactionAttributes>${body.data.transactionAttributes}</req:TransactionAttributes>
+         #end
+         <req:TransactionDetails>${body.data.transactionDetails}</req:TransactionDetails>
+         #if (${body.data.transactionDate})
+         	<!--Optional:-->
+         	<req:TransactionDate>${body.data.transactionDate}</req:TransactionDate>
+         #end
+         #if (${body.data.operatorID})
+         	<!--Optional:-->
+         	<req:OperatorID>${body.data.operatorID}</req:OperatorID>
+         #end
+         #if (${body.data.postingDate})
+         	<!--Optional:-->
+         	<req:PostingDate>${body.data.postingDate}</req:PostingDate>
+         #end
+         <req:UserInfo>${body.data.userInfo}</req:UserInfo>	     
+</req:DATA>
