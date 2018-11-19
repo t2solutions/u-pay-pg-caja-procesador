@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonPropertyOrder({ "BankCode", "TransactionId", "UniqueRefNumber",  "MsgCode", "RRN", "PayerContractScope", "PayerContractIdentifier", "PayerContractRelation",
+@JsonPropertyOrder({ "BankCode", "TransactionID", "UniqueRefNumber",  "MsgCode", "RRN", "PayerContractScope", "PayerContractIdentifier", "PayerContractRelation",
 	"PayerCardSequenceNumber", "PayerExpirationDate","PayeeContractScope", "PayeeContractIdentifier", "PayeeContractRelation", "PayeeCardSequenceNumber",
 	"PayeeExpirationDate", "Amount", "Currency", "TransactionAttributes", "TransactionDetails", "TransactionDate", "OperatorID", "PostingDate",
 	"UserInfo" })
