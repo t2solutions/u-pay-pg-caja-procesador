@@ -1,0 +1,26 @@
+<req:EventsByContractReq
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetEventsByContract/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/Monetary/Req-v2017.10 Monetary_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.eventsByContractReq.data.bankCode}</req:BankCode>
+        <req:ContractIdentifier>${body.eventsByContractReq.data.contractIdentifier}</req:ContractIdentifier>
+         #if (${body.eventsByContractReq.data.contractRelation}) 
+        	<!--Optional:-->
+        	<req:ContractRelation>${body.eventsByContractReq.data.contractRelation}</req:ContractRelation>
+        #end 
+        #if (${body.eventsByContractReq.data.startDate}) 
+        	<!--Optional:-->
+        	<req:StartDate>${body.eventsByContractReq.data.startDate}</req:StartDate>
+        #end         
+        #if (${body.eventsByContractReq.data.endDate}) 
+        	<!--Optional:-->
+        	<req:EndDate>${body.eventsByContractReq.data.endDate}</req:EndDate>
+        #end 		
+        #if (${body.eventsByContractReq.data.eventCode}) 
+        	<!--Optional:-->
+        	<req:EventCode>${body.eventsByContractReq.data.eventCode}</req:EventCode>
+        #end 			
+        <req:UserInfo>${body.eventsByContractReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+  </req:EventsByContractReq>
