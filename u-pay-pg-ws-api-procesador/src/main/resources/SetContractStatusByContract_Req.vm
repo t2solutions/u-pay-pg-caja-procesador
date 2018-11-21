@@ -1,0 +1,20 @@
+  <req:SetContractStatusByContractReq
+  	xmlns:req="http://xsd.nexuschile.cl/Prepaid/SetContractStatusByContract/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/SetContractStatusByContract/Req-v2017.10 SetContractStatusByContract_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.contractStatusByContractReq.data.bankCode}</req:BankCode>
+        <req:ContractIdentifier>${body.contractStatusByContractReq.data.contractIdentifier}</req:ContractIdentifier>
+        <req:NewStatus>${body.contractStatusByContractReq.data.newStatus}</req:NewStatus>
+        #if (${body.contractStatusByContractReq.data.reason}) 
+        	<!--Optional:-->
+        	<req:Reason>${body.contractStatusByContractReq.data.reason}</req:Reason>
+        #end
+        <req:ApplRegNumber>?</req:ApplRegNumber>
+        #if (${body.contractStatusByContractReq.data.applicationSource}) 
+        	<!--Optional:-->
+        	<req:ApplicationSource>${body.contractStatusByContractReq.data.applicationSource}</req:ApplicationSource>
+        #end
+        <req:UserInfo>${body.contractStatusByContractReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+  </req:SetContractStatusByContractReq>
