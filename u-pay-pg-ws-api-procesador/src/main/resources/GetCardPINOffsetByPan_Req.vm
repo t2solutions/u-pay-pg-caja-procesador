@@ -1,0 +1,14 @@
+<req:GetCardPINOffsetByPanReq
+	xmlns:req="http://xsd.nexuschile.cl/Prepaid/GetCardPINOffsetByPan/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetCardPINOffsetByPan/Req-v2017.10 GetCardPINOffsetByPan_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.getCardPINOffsetByPanReq.data.bankCode}</req:BankCode>
+        <req:Pan>${body.getCardPINOffsetByPanReq.data.bankCode}</req:Pan>
+         #if (${body.getCardPINOffsetByPanReq.data.contractRelation}) 
+        	<!--Optional:-->
+        	<req:SeqvNumber>${body.getCardPINOffsetByPanReq.data.seqvNumber}</req:SeqvNumber>
+        #end 
+        <req:UserInfo>${body.getCardPINOffsetByPanReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+</req:GetCardPINOffsetByPanReq>
