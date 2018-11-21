@@ -10,7 +10,7 @@
         	<!--Optional:-->
         	<req:Reason>${body.contractStatusByContractReq.data.reason}</req:Reason>
         #end
-        <req:ApplRegNumber>?</req:ApplRegNumber>
+        <req:ApplRegNumber>${body.contractStatusByContractReq.data.applRegNumber}</req:ApplRegNumber>
         #if (${body.contractStatusByContractReq.data.applicationSource}) 
         	<!--Optional:-->
         	<req:ApplicationSource>${body.contractStatusByContractReq.data.applicationSource}</req:ApplicationSource>
