@@ -1,0 +1,31 @@
+ <req:SetPinByCardReq
+ 	xmlns:req="http://xsd.nexuschile.cl/Prepaid/SetPinByCard/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/SetPinByCard/Req-v2017.10 SetPinByCard_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.setPinByCardReq.data.bankCode}</req:BankCode>
+        <req:CardNumber>${body.setPinByCardReq.data.cardNumber}</req:CardNumber>
+        <req:Operation>${body.setPinByCardReq.data.operation}</req:Operation>
+         #if (${body.setPinByCardReq.data.offset}) 
+        	<!--Optional:-->
+        	<req:Offset>${body.setPinByCardReq.data.offset}</req:Offset>
+         #end
+         #if (${body.setPinByCardReq.data.oldPinBlock}) 
+        	<!--Optional:-->
+       	 	<req:OldPinBlock>${body.setPinByCardReq.data.oldPinBlock}</req:OldPinBlock>
+         #end
+         #if (${body.setPinByCardReq.data.pinBlockNew}) 
+        	<!--Optional:-->
+        	<req:PinBlockNew>${body.setPinByCardReq.data.pinBlockNew}</req:PinBlockNew>
+         #end
+         #if (${body.setPinByCardReq.data.idDukpt}) 
+        	<!--Optional:-->
+        	<req:IdDukpt>${body.setPinByCardReq.data.idDukpt}</req:IdDukpt>
+         #end       
+         #if (${body.setPinByCardReq.data.seqvNumber}) 
+        	<!--Optional:-->
+        	<req:SeqvNumber>${body.setPinByCardReq.data.seqvNumber}</req:SeqvNumber>
+         #end
+        <req:UserInfo>${body.setPinByCardReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+ </req:SetPinByCardReq>

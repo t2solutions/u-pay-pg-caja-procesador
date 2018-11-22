@@ -9,6 +9,3 @@ xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetClassifierByContract/Req
 	    <req:UserInfo>${body.cntByClassReq.data.userInfo}</req:UserInfo>     
 	</req:Data>
 </req:ContractClassifierReq>
-
-
-

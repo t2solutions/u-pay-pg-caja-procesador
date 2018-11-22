@@ -1,0 +1,14 @@
+ <req:ResetPinByCardReq
+ 	xmlns:req="http://xsd.nexuschile.cl/Prepaid/ResetPinByCard/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/ResetPinByCard/Req-v2017.10 ResetPinByCard_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.resetPinByCardReq.data.bankCode}</req:BankCode>
+        <req:PAN>${body.resetPinByCardReq.data.pan}</req:PAN>
+        #if (${body.resetPinByCardReq.data.seqvNumber}) 
+        	<!--Optional:-->
+        	<req:SeqvNumber>${body.resetPinByCardReq.data.seqvNumber}</req:SeqvNumber>
+        #end
+        <req:UserInfo>${body.resetPinByCardReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+ </req:ResetPinByCardReq>
