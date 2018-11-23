@@ -1,0 +1,124 @@
+   <req:EditClientReq
+    xmlns:req="http://xsd.nexuschile.cl/Prepaid/EditClient/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/EditClient/Req-v2017.10 EditClient_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.editClientReq.data.bankCode}</req:BankCode>
+        <req:ClientIdentifier>${body.editClientReq.data.clientIdentifier}</req:ClientIdentifier>
+        <req:ClientSearchCategory>${body.editClientReq.data.rclientSearchCategory}</req:ClientSearchCategory>
+        #if (${body.editClientReq.data.reasonCode})
+       		 <!--Optional:-->
+        	<req:ReasonCode>${body.editClientReq.data.reasonCode}</req:ReasonCode>
+        #end
+         #if (${body.editClientReq.data.reason})
+       		<!--Optional:-->
+        	<req:Reason>${body.editClientReq.data.reason}</req:Reason>
+         #end
+        <req:ApplRegNumber>${body.editClientReq.data.applRegNumber}</req:ApplRegNumber>
+         #if (${body.editClientReq.data.applicationSource})
+        	<!--Optional:-->
+        	<req:ApplicationSource>${body.editClientReq.data.applicationSource}</req:ApplicationSource>
+         #end
+         #if (${body.editClientReq.data.languageCode})
+       		 <!--Optional:-->
+        	<req:LanguageCode>${body.editClientReq.data.languageCode}</req:LanguageCode>
+         #end
+         #if (${body.editClientReq.data.shortName})
+        	<!--Optional:-->
+        	<req:ShortName>${body.editClientReq.data.shortName}</req:ShortName>
+        #end
+       	#if (${body.editClientReq.data.gender})
+        	<!--Optional:-->
+        	<req:Gender>${body.editClientReq.data.gender}</req:Gender>
+        #end
+        #if (${body.editClientReq.data.salutationCode})
+        	<!--Optional:-->
+       	 	<req:SalutationCode>${body.editClientReq.data.salutationCode}</req:SalutationCode>
+        #end
+        #if (${body.editClientReq.data.branch})
+        	<!--Optional:-->
+        	<req:Branch>${body.editClientReq.data.branch}</req:Branch>
+        #end
+        #if (${body.editClientReq.data.serviceGroup})
+        	<!--Optional:-->
+        	<req:ServiceGroup>${body.editClientReq.data.serviceGroup}</req:ServiceGroup>
+        #end
+        #if (${body.editClientReq.data.firstName})
+        	<!--Optional:-->
+        	<req:FirstName>?</req:FirstName>
+        #end
+        #if (${body.editClientReq.data.middleName})
+        	<!--Optional:-->
+        	<req:MiddleName>${body.editClientReq.data.middleName}</req:MiddleName>
+        #end
+        #if (${body.editClientReq.data.lastName})
+        	<!--Optional:-->
+        	<req:LastName>${body.editClientReq.data.lastName}</req:LastName>
+        #end
+        #if (${body.editClientReq.data.birthDate})
+        	<!--Optional:-->
+        	<req:BirthDate>${body.editClientReq.data.birthDate}</req:BirthDate>
+        #end
+        #if (${body.editClientReq.data.birthPlace})
+        	<!--Optional:-->
+        	<req:BirthPlace>${body.editClientReq.data.birthPlace}</req:BirthPlace>
+        #end
+        #if (${body.editClientReq.data.birthName})
+        	<!--Optional:-->
+        	<req:BirthName>${body.editClientReq.data.birthName}</req:BirthName>
+        #end
+        #if (${body.editClientReq.data.citizenship})
+        	<!--Optional:-->
+       	 	<req:Citizenship>${body.editClientReq.data.citizenship}</req:Citizenship>
+        #end
+        #if (${body.editClientReq.data.maritalStatusCode})
+        	<!--Optional:-->
+        	<req:MaritalStatusCode>${body.editClientReq.data.maritalStatusCode}</req:MaritalStatusCode>
+        #end
+        #if (${body.editClientReq.data.taxBracket})
+        	<!--Optional:-->
+        	<req:TaxBracket>${body.editClientReq.data.taxBracket}</req:TaxBracket>
+        #end
+        #if (${body.editClientReq.data.individualTaxpayerNumber})
+        	<!--Optional:-->
+        	<req:IndividualTaxpayerNumber>${body.editClientReq.data.individualTaxpayerNumber}</req:IndividualTaxpayerNumber>
+        #end
+        #if (${body.editClientReq.data.companyName})
+        	<!--Optional:-->
+        	<req:CompanyName>${body.editClientReq.data.companyName}</req:CompanyName>
+        #end
+        #if (${body.editClientReq.data.trademark})
+        	<!--Optional:-->
+        	<req:Trademark>${body.editClientReq.data.trademark}</req:Trademark>
+        #end
+        #if (${body.editClientReq.data.department})
+        	<!--Optional:-->
+       	 	<req:Department>${body.editClientReq.data.department}</req:Department>
+        #end
+        #if (${body.editClientReq.data.position})
+       		 <!--Optional:-->
+       		 <req:Position>${body.editClientReq.data.position}</req:Position>
+        #end
+        #if (${body.editClientReq.data.identityCardDetails})
+        	<!--Optional:-->
+       	 	<req:IdentityCardDetails>${body.editClientReq.data.identityCardDetails}</req:IdentityCardDetails>
+        #end
+        #if (${body.editClientReq.data.clientNumber})
+        	<!--Optional:-->
+       	 	<req:ClientNumber>${body.editClientReq.data.clientNumber}</req:ClientNumber>
+        #end
+        #if (${body.editClientReq.data.secretPhrase})
+        	<!--Optional:-->
+        	<req:SecretPhrase>${body.editClientReq.data.secretPhrase}</req:SecretPhrase>
+        #end
+        #if (${body.editClientReq.data.additionalDate01})
+        	<!--Optional:-->
+        	<req:AdditionalDate01>${body.editClientReq.data.additionalDate01}</req:AdditionalDate01>
+        #end
+        #if (${body.editClientReq.data.additionalDate02})
+        	<!--Optional:-->
+        	<req:AdditionalDate02>${body.editClientReq.data.additionalDate02}</req:AdditionalDate02>
+        #end
+        <req:UserInfo>${body.editClientReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+  </req:EditClientReq>
