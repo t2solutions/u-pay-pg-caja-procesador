@@ -1,0 +1,10 @@
+<req:GetKeysDUKPTByPanReq
+ 	xmlns:req="http://xsd.nexuschile.cl/Credit/GetKeysDUKPTByPan/Req-v2017.10"	
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.nexuschile.cl/Credit/GetKeysDUKPTByPan/Req-v2017.10 GetKeysDUKPTByPan_Req.xsd ">
+     <req:Data>
+        <req:BankCode>${body.getKeysDUKPTByPanReq.data.bankCode}</req:BankCode>
+        <req:CardNumber>${body.getKeysDUKPTByPanReq.data.cardNumber}</req:CardNumber>
+        <req:UserInfo>${body.getKeysDUKPTByPanReq.data.userInfo}</req:UserInfo>
+     </req:Data>
+</req:GetKeysDUKPTByPanReq>
