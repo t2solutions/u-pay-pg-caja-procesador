@@ -1,9 +1,9 @@
 package com.upayments.pg.caja.api.io.soap;
 
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -22,6 +22,7 @@ public class Common implements Serializable {
 	}
 
 	@JsonProperty("ServiceID")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getServiceID() {
 		return serviceID;
 	}
@@ -31,6 +32,7 @@ public class Common implements Serializable {
 	}
 
 	@JsonProperty("ServiceVersion")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getServiceVersion() {
 		return serviceVersion;
 	}
@@ -40,6 +42,7 @@ public class Common implements Serializable {
 	}
 
 	@JsonProperty("Product")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getProduct() {
 		return product;
 	}
@@ -49,6 +52,7 @@ public class Common implements Serializable {
 	}
 
 	@JsonProperty("RequestDate")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getRequestDate() {
 		return requestDate;
 	}
