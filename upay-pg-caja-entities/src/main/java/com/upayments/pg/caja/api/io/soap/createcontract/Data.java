@@ -2,7 +2,8 @@ package com.upayments.pg.caja.api.io.soap.createcontract;
 
 import java.io.Serializable;
 
-
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -44,6 +45,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo01")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo01() {
 		return addInfo01;
 	}
@@ -53,6 +55,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo02")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getAddInfo02() {
 		return addInfo02;
 	}
@@ -62,6 +65,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ApplicationSource")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getApplicationSource() {
 		return applicationSource;
 	}
@@ -98,6 +102,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ProductCode2")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getProductCode2() {
 		return productCode2;
 	}
@@ -107,6 +112,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ProductCode3")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getProductCode3() {
 		return productCode3;
 	}
@@ -116,6 +122,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ServiceGroup")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getServiceGroup() {
 		return serviceGroup;
 	}
@@ -125,6 +132,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("CloseDate")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getCloseDate() {
 		return closeDate;
 	}
@@ -134,6 +142,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo03")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getAddInfo03() {
 		return addInfo03;
 	}
