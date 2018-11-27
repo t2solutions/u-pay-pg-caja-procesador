@@ -2,7 +2,8 @@ package com.upayments.pg.caja.api.io.soap.createclient;
 
 import java.io.Serializable;
 
-
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -78,6 +79,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ReasonCode")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getReasonCode() {
 		return reasonCode;
 	}
@@ -87,6 +89,8 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Reason")
+	@JsonInclude(Include.NON_DEFAULT)
+	
 	public String getReason() {
 		return reason;
 	}
@@ -105,6 +109,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("LanguageCode")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getLanguageCode() {
 		return languageCode;
 	}
@@ -123,6 +128,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("SalutationCode")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getSalutationCode() {
 		return salutationCode;
 	}
@@ -141,6 +147,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ServiceGroup")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getServiceGroup() {
 		return serviceGroup;
 	}
@@ -150,6 +157,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ShortName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getShortName() {
 		return shortName;
 	}
@@ -177,6 +185,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("MiddleName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getMiddleName() {
 		return middleName;
 	}
@@ -204,6 +213,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("BirthPlace")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getBirthPlace() {
 		return birthPlace;
 	}
@@ -213,6 +223,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("BirthName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getBirthName() {
 		return birthName;
 	}
@@ -222,6 +233,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Citizenship")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getCitizenship() {
 		return citizenship;
 	}
@@ -231,6 +243,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("TaxBracket")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getTaxBracket() {
 		return taxBracket;
 	}
@@ -240,6 +253,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("IndividualTaxpayerNumber")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getIndividualTaxpayerNumber() {
 		return individualTaxpayerNumber;
 	}
@@ -249,6 +263,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("CompanyName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getCompanyName() {
 		return companyName;
 	}
@@ -258,6 +273,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Trademark")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getTrademark() {
 		return trademark;
 	}
@@ -267,6 +283,8 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Department")
+	@JsonInclude(Include.NON_DEFAULT)
+	
 	public String getDepartment() {
 		return department;
 	}
@@ -276,6 +294,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Position")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getPosition() {
 		return position;
 	}
@@ -294,6 +313,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("IdentityCardDetails")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getIdentityCardDetails() {
 		return identityCardDetails;
 	}
@@ -303,6 +323,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ClientNumber")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getClientNumber() {
 		return clientNumber;
 	}
@@ -312,6 +333,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("SecretPhrase")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getSecretPhrase() {
 		return secretPhrase;
 	}
@@ -321,6 +343,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo01")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo01() {
 		return addInfo01;
 	}
@@ -330,6 +353,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo02")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo02() {
 		return addInfo02;
 	}
@@ -339,6 +363,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddDate01")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddDate01() {
 		return addDate01;
 	}
@@ -348,6 +373,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddDate02")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddDate02() {
 		return addDate02;
 	}
@@ -357,6 +383,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ApplicationSource")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getApplicationSource() {
 		return applicationSource;
 	}
@@ -368,6 +395,7 @@ public class Data implements Serializable {
 
 	
 	@JsonProperty("AddInfo03")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo03() {
 		return addInfo03;
 	}
@@ -377,6 +405,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo04")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo04() {
 		return addInfo04;
 	}
