@@ -4,26 +4,56 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateCard/Req-v2017.10 CreateCard_Req.xsd ">	
          <req:BankCode>${body.data.bankCode}</req:BankCode>
+         #if (${body.data.contractScope})  
          <req:ContractScope>${body.data.contractScope}</req:ContractScope>
+         #end
          <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+         #if (${body.data.contractRelation}) 
          <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+         #end
+         #if (${body.data.productIdentifier}) 
          <req:ProductIdentifier>${body.data.productIdentifier}</req:ProductIdentifier>
+         #end
          <req:ProductCode>${body.data.productCode}</req:ProductCode>
+         #if (${body.data.productCode2}) 
          <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+         #end
+         #if (${body.data.productCode3}) 
          <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+         #end
+         #if (${body.data.cardSequenceNumber}) 
          <req:CardSequenceNumber>${body.data.cardSequenceNumber}</req:CardSequenceNumber>
+         #end
          <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         #if (${body.data.applicationSource}) 
          <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+         #end
+         #if (${body.data.embossedTitleCode}) 
          <req:EmbossedTitleCode>${body.data.embossedTitleCode}</req:EmbossedTitleCode>
+         #end
+         #if (${body.data.chipSchemeCode}) 
          <req:ChipSchemeCode>${body.data.chipSchemeCode}</req:ChipSchemeCode>
+         #end
+         #if (${body.data.riskSchemeCode}) 
          <req:RiskSchemeCode>${body.data.riskSchemeCode}</req:RiskSchemeCode>
+         #end
+         #if (${body.data.riskFactor}) 
          <req:RiskFactor>${body.data.riskFactor}</req:RiskFactor>
+         #end
          <req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
          <req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+         #if (${body.data.embossedCompanyName}) 
          <req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+         #end
          <req:Afinity>${body.data.afinity}</req:Afinity>
+         #if (${body.data.addInfo02}) 
          <req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+         #end
+         #if (${body.data.addInfo03}) 
          <req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+         #end
+         #if (${body.data.addInfo04}) 
          <req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+         #end
          <req:UserInfo>${body.data.userInfo}</req:UserInfo>	
 </req:DATA>
