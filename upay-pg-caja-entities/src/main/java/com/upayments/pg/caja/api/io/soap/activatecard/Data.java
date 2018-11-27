@@ -2,7 +2,8 @@ package com.upayments.pg.caja.api.io.soap.activatecard;
 
 import java.io.Serializable;
 
-
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -36,6 +37,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ReasonCode")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getReasonCode() {
 		return reasonCode;
 	}
@@ -45,6 +47,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Reason")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getReason() {
 		return reason;
 	}
@@ -63,6 +66,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("CardSequenceNumber")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getCardSequenceNumber() {
 		return cardSequenceNumber;
 	}
@@ -81,6 +85,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ApplicationSource")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getApplicationSource() {
 		return applicationSource;
 	}

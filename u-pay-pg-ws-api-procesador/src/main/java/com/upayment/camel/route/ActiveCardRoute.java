@@ -13,7 +13,7 @@ public class ActiveCardRoute extends RestRouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		
-    rest("/activeCard")
+    rest("/activateCard")
     	.post("/")
     	.description("Servicio para invocar a WS SOAP ActiveCard")
     	.type(DataInput.class)
@@ -51,11 +51,6 @@ public class ActiveCardRoute extends RestRouteBuilder {
     	.log("BODY REFORMATEADO -> ${body}")
     	//DataOutput
     	//.unmarshal(new JacksonDataFormat(DataOutput.class))
-    	
-    	//.setBody(constant("Hi!"));
-    	//.setBody(simple("${body.respuesta}"))
-    	//.marshal().json(JsonLibrary.Jackson)	    	
-    	//.setProperty("retCode", jsonpath("resp:RetCode", true))
     	
         .setHeader(ConstantesCamel.HTTP_RESPONSE_CODE, simple(ConstantesCamel.HTTP_200));		
 		
