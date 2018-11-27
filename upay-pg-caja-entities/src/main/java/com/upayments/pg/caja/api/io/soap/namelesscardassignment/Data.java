@@ -7,10 +7,8 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonPropertyOrder({ "BankCode", "TransactionID", "UniqueRefNumber",  "MsgCode", "RRN", "PayerContractScope", "PayerContractIdentifier", "PayerContractRelation",
-	"PayerCardSequenceNumber", "PayerExpirationDate","PayeeContractScope", "PayeeContractIdentifier", "PayeeContractRelation", "PayeeCardSequenceNumber",
-	"PayeeExpirationDate", "Amount", "Currency", "TransactionAttributes", "TransactionDetails", "TransactionDate", "OperatorID", "PostingDate",
-	"UserInfo" })
+@JsonPropertyOrder({ "BankCode", "Reason", "CardNumber", "IdentityCardNumber",
+		"ContractNumber", "EmbossedFirstName", "EmbossedLastName", "UserInfo" })
 public class Data implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -66,7 +64,7 @@ public class Data implements Serializable {
 		this.identityCardNumber = identityCardNumber;
 	}
 
-	@JsonProperty("IdentityCardNumber")
+	@JsonProperty("ContractNumber")
 	public String getContractNumber() {
 		return contractNumber;
 	}
