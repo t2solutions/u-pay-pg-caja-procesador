@@ -4,25 +4,59 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/CreateAddress/Req-v2017.10 CreateAddress_Req.xsd ">
 	 <req:BankCode>${body.data.bankCode}</req:BankCode>
+	 #if (${body.data.clientIdentifier}) 
 	 <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+	 #end
 	 <req:ClientTypeCode>${body.data.clientTypeCode}</req:ClientTypeCode>
+	 #if (${body.data.contractIdentifier}) 
 	 <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+	 #end
+	 #if (${body.data.contractRelation}) 
 	 <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+	 #end
+	 #if (${body.data.reason}) 
 	 <req:Reason>${body.data.reason}</req:Reason>
+	 #end
 	 <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
 	 <req:AddressTypeCode>${body.data.addressTypeCode}</req:AddressTypeCode>
+	 #if (${body.data.deliveryTypeCode}) 
 	 <req:DeliveryTypeCode>${body.data.deliveryTypeCode}</req:DeliveryTypeCode>
+	 #end
+	 #if (${body.data.line1}) 
 	 <req:Line1>${body.data.line1}</req:Line1>
+	 #end
+	 #if (${body.data.line2}) 	 
 	 <req:Line2>${body.data.line2}</req:Line2>
+	 #end
+	 #if (${body.data.city}) 	 
 	 <req:City>${body.data.city}</req:City>
+	 #end
+	 #if (${body.data.district}) 	
 	 <req:District>${body.data.district}</req:District>
+	 #end
+	 #if (${body.data.region}) 	
 	 <req:Region>${body.data.region}</req:Region>
+	 #end
+	 #if (${body.data.country}) 	
 	 <req:Country>${body.data.country}</req:Country>
+	 #end
+	 #if (${body.data.zipcode}) 
 	 <req:ZipCode>${body.data.zipcode}</req:ZipCode>
+	 #end
+	 #if (${body.data.homePhone})
 	 <req:HomePhone>${body.data.homePhone}</req:HomePhone>
+	 #end
+	 #if (${body.data.mobilePhone})
 	 <req:MobilePhone>${body.data.mobilePhone}</req:MobilePhone>
+	 #end
+	 #if (${body.data.email})
 	 <req:Email>${body.data.email}</req:Email>
+	 #end
+	 #if (${body.data.activationDate})
 	 <req:ActivationDate>${body.data.activationDate}</req:ActivationDate>
+	 #end
+	 #if (${body.data.deactivationDate})
 	 <req:DeactivationDate>${body.data.deactivationDate}</req:DeactivationDate>
+	 #end
 	 <req:UserInfo>${body.data.userInfo}</req:UserInfo>		
 </req:DATA>
