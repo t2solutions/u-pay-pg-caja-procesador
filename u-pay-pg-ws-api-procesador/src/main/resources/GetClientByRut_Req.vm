@@ -6,8 +6,10 @@ xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetAddresses/Req-v2017.10 G
             <req:BankCode>${body.data.bankCode}</req:BankCode>
             <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
             <req:ClientSearchCategory>${body.data.clientSearchCategory}</req:ClientSearchCategory>
-            <!--Optional:-->
-            <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+            #if (${body.data.contractRelation})
+            	<!--Optional:-->
+            	<req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+            #end
             <req:UserInfo>${body.data.userInfo}</req:UserInfo>
          </req:Data> 
  </req:GetClientByRutReq>
