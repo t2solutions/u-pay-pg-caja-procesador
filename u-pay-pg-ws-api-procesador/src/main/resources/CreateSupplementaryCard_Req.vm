@@ -9,20 +9,44 @@
          <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
 		 <req:ProductCode>${body.data.productCode}</req:ProductCode>
          <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         #if (${body.data.applicationSource})
          <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+         #end
+         #if (${body.data.embossedTitleCode}) 
          <req:EmbossedTitleCode>${body.data.embossedTitleCode}</req:EmbossedTitleCode>
+         #end
+         #if (${body.data.productCode2}) 
 		 <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+		 #end 
+		 #if (${body.data.productCode3})  
 		 <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+		 #end 
+		 #if (${body.data.chipSchemeCode})  
          <req:ChipSchemeCode>${body.data.chipSchemeCode}</req:ChipSchemeCode>
+         #end 
+         #if (${body.data.riskSchemeCode})
          <req:RiskSchemeCode>${body.data.riskSchemeCode}</req:RiskSchemeCode>
+         #end
+         #if (${body.data.riskFactor}) 
          <req:RiskFactor>${body.data.riskFactor}</req:RiskFactor>
+         #end
+         #if (${body.data.embossedTitle}) 
          <req:EmbossedTitle>${body.data.embossedTitle}</req:EmbossedTitle>
+         #end
          <req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
          <req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+         #if (${body.data.embossedCompanyName}) 
          <req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+         #end 
          <req:Afinity>${body.data.affinity}</req:Afinity>
+         #if (${body.data.addInfo02}) 
          <req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+         #end
+         #if (${body.data.addInfo03}) 
          <req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+         #end
+         #if (${body.data.addInfo04})  
          <req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+         #end
          <req:UserInfo>${body.data.userInfo}</req:UserInfo>		 		 
  </req:DATA>

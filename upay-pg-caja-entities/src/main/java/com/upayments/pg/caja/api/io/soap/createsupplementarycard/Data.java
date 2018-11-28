@@ -2,6 +2,8 @@ package com.upayments.pg.caja.api.io.soap.createsupplementarycard;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -52,6 +54,7 @@ public class Data implements Serializable {
 	}
 	
 	@JsonProperty("ChipSchemeCode")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getChipSchemeCode() {
 		return chipSchemeCode;
 	}
@@ -61,6 +64,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("RiskSchemeCode")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getRiskSchemeCode() {
 		return riskSchemeCode;
 	}
@@ -70,6 +74,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("RiskFactor")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getRiskFactor() {
 		return riskFactor;
 	}
@@ -97,6 +102,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedCompanyName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedCompanyName() {
 		return embossedCompanyName;
 	}
@@ -124,6 +130,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ProductCode2")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getProductCode2() {
 		return productCode2;
 	}
@@ -133,6 +140,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ProductCode3")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getProductCode3() {
 		return productCode3;
 	}
@@ -169,6 +177,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ApplicationSource")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getApplicationSource() {
 		return applicationSource;
 	}
@@ -178,6 +187,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedTitleCode")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedTitleCode() {
 		return embossedTitleCode;
 	}
@@ -187,6 +197,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedTitle")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedTitle() {
 		return embossedTitle;
 	}
@@ -205,6 +216,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo02")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo02() {
 		return addInfo02;
 	}
@@ -214,6 +226,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo03")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo03() {
 		return addInfo03;
 	}
@@ -223,6 +236,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo04")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo04() {
 		return addInfo04;
 	}
