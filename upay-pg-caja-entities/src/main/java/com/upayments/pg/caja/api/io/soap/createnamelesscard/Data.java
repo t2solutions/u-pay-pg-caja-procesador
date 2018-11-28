@@ -2,7 +2,8 @@ package com.upayments.pg.caja.api.io.soap.createnamelesscard;
 
 import java.io.Serializable;
 
-
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -44,6 +45,7 @@ public class Data implements Serializable {
 	}
 	
 	@JsonProperty("ChipSchemeCode")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getChipSchemeCode() {
 		return chipSchemeCode;
 	}
@@ -53,6 +55,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("RiskSchemeCode")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getRiskSchemeCode() {
 		return riskSchemeCode;
 	}
@@ -62,6 +65,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("RiskFactor")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getRiskFactor() {
 		return riskFactor;
 	}
@@ -71,6 +75,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedFirstName")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getEmbossedFirstName() {
 		return embossedFirstName;
 	}
@@ -80,6 +85,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedLastName")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getEmbossedLastName() {
 		return embossedLastName;
 	}
@@ -89,6 +95,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedCompanyName")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getEmbossedCompanyName() {
 		return embossedCompanyName;
 	}
@@ -116,6 +123,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ProductCode2")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getProductCode2() {
 		return productCode2;
 	}
@@ -125,6 +133,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ProductCode3")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getProductCode3() {
 		return productCode3;
 	}

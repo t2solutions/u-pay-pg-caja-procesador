@@ -7,13 +7,29 @@
 		 <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
 		 <req:ProductCode>${body.data.productCode}</req:ProductCode>
          <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         #if (${body.data.productCode2})   
 		 <req:ProductCode2>${body.data.productCode2}</req:ProductCode2>
+		 #end
+		 #if (${body.data.productCode3})   
 		 <req:ProductCode3>${body.data.productCode3}</req:ProductCode3>
+		 #end
+		 #if (${body.data.chipSchemeCode})   
          <req:ChipSchemeCode>${body.data.chipSchemeCode}</req:ChipSchemeCode>
+         #end 
+         #if (${body.data.riskSchemeCode}) 
          <req:RiskSchemeCode>${body.data.riskSchemeCode}</req:RiskSchemeCode>
+         #end 
+         #if (${body.data.riskFactor})  
          <req:RiskFactor>${body.data.riskFactor}</req:RiskFactor>
+         #end
+         #if (${body.data.embossedFirstName})  
          <req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
+         #end
+         #if (${body.data.embossedLastName}) 
          <req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+         #end
+         #if (${body.data.embossedCompanyName})  
          <req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+         #end 
 		 <req:UserInfo>${body.data.userInfo}</req:UserInfo>
  </req:DATA>
