@@ -2,6 +2,8 @@ package com.upayments.pg.caja.api.io.soap.openevent;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -57,6 +59,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Amount")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getAmount() {
 		return amount;
 	}
@@ -66,6 +69,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Currency")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getCurrency() {
 		return currency;
 	}
@@ -75,6 +79,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ParamString")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getParamString() {
 		return paramString;
 	}
@@ -84,6 +89,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("StartDate")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getStartDate() {
 		return startDate;
 	}
@@ -93,6 +99,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EndDate")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getEndDate() {
 		return endDate;
 	}
@@ -111,6 +118,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Reason")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getReason() {
 		return reason;
 	}

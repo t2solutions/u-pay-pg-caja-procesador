@@ -6,12 +6,24 @@
 		 <req:BankCode>${body.data.bankCode}</req:BankCode>
          <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
          <req:EventCode>${body.data.eventCode}</req:EventCode>
+         #if (${body.data.amount})
          <req:Amount>${body.data.amount}</req:Amount>
+         #end
+         #if (${body.data.currency})
          <req:Currency>${body.data.currency}</req:Currency>
+         #end
+         #if (${body.data.paramString})
          <req:ParamString>${body.data.paramString}</req:ParamString>
+         #end
+         #if (${body.data.startDate})
          <req:StartDate>${body.data.startDate}</req:StartDate>
+         #end
+         #if (${body.data.endDate})
          <req:EndDate>${body.data.endDate}</req:EndDate>
+         #end         
          <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+         #if (${body.data.reason})
          <req:Reason>${body.data.reason}</req:Reason>
+         #end           
          <req:UserInfo>${body.data.userInfo}</req:UserInfo>		 	
  </req:DATA>
