@@ -3,43 +3,77 @@
 	xmlns:tns="http://xsd.nexuschile.cl/Common/Resources/Schema/Restrictions/v2017.10"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/EditAddress/Req-v2017.10 EditAddress_Req.xsd ">	
-		<req:BankCode>${body.data.bankCode}</req:BankCode>
+		<req:BankCode>${body.data.bankCode}</req:BankCode>		
+		#if (${body.data.clientIdentifier})
 		<!--Optional:-->
 		<req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+		#end
 		<req:ClientTypeCode>${body.data.clientTypeCode}</req:ClientTypeCode>
+		#if (${body.data.contractIdentifier})
 		<!--Optional:-->
 		<req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+		#end
+		#if (${body.data.contractRelation})
 		<!--Optional:-->
 		<req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+		#end
+		#if (${body.data.reason})
 		<!--Optional:-->
 		<req:Reason>${body.data.reason}</req:Reason>
+		#end
 		<req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
 		<req:AddressTypeCode>${body.data.addressTypeCode}</req:AddressTypeCode>
+		#if (${body.data.deliveryTypeCode})
 		<!--Optional:-->
 		<req:DeliveryTypeCode>${body.data.deliveryTypeCode}</req:DeliveryTypeCode>
+		#end
+		#if (${body.data.line1})
 		<!--Optional:-->
 		<req:Line1>${body.data.line1}</req:Line1>
+		#end
+		#if (${body.data.line2})
 		<!--Optional:-->
 		<req:Line2>${body.data.line2}</req:Line2>
+		#end
+		#if (${body.data.city})
 		<!--Optional:-->
 		<req:City>${body.data.city}</req:City>
+		#end
+		#if (${body.data.district})
 		<!--Optional:-->
 		<req:District>${body.data.district}</req:District>
+		#end
+		#if (${body.data.region})
 		<!--Optional:-->
 		<req:Region>${body.data.region}</req:Region>
+		#end
+		#if (${body.data.country})
 		<!--Optional:-->
 		<req:Country>${body.data.country}</req:Country>
+		#end
+		#if (${body.data.zipCode})
 		<!--Optional:-->
 		<req:ZipCode>${body.data.zipCode}</req:ZipCode>
+		#end
+		#if (${body.data.homePhone})
 		<!--Optional:-->
 		<req:HomePhone>${body.data.homePhone}</req:HomePhone>
+		#end
+		#if (${body.data.mobilePhone})
 		<!--Optional:-->
 		<req:MobilePhone>${body.data.mobilePhone}</req:MobilePhone>
+		#end
+		#if (${body.data.email})
 		<!--Optional:-->
 		<req:Email>${body.data.email}</req:Email>
+		#end
+		#if (${body.data.activationDate})
 		<!--Optional:-->
 		<req:ActivationDate>${body.data.activationDate}</req:ActivationDate>
+		#end
+		#if (${body.data.deactivationDate})
 		<!--Optional:-->
 		<req:DeactivationDate>${body.data.deactivationDate}</req:DeactivationDate>
+		#end
 		<req:UserInfo>${body.data.userInfo}</req:UserInfo>	 	
  </req:DATA>

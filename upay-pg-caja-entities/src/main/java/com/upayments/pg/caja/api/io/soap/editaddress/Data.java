@@ -2,6 +2,8 @@ package com.upayments.pg.caja.api.io.soap.editaddress;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -54,6 +56,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ClientIdentifier")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getClientIdentifier() {
 		return clientIdentifier;
 	}
@@ -72,6 +75,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ContractRelation")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getContractRelation() {
 		return contractRelation;
 	}
@@ -90,6 +94,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("DeliveryTypeCode")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getDeliveryTypeCode() {
 		return deliveryTypeCode;
 	}
@@ -99,6 +104,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Line1")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getLine1() {
 		return line1;
 	}
@@ -108,6 +114,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Line2")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getLine2() {
 		return line2;
 	}
@@ -117,6 +124,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("City")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getCity() {
 		return city;
 	}
@@ -126,6 +134,7 @@ public class Data implements Serializable {
 	}
 		
 	@JsonProperty("District")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getDistrict() {
 		return district;
 	}
@@ -135,6 +144,7 @@ public class Data implements Serializable {
 	}
 	
 	@JsonProperty("Region")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getRegion() {
 		return region;
 	}
@@ -144,6 +154,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Country")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getCountry() {
 		return country;
 	}
@@ -153,6 +164,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ZipCode")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getZipCode() {
 		return zipCode;
 	}
@@ -171,6 +183,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("MobilePhone")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getMobilePhone() {
 		return mobilePhone;
 	}
@@ -180,6 +193,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Email")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getEmail() {
 		return email;
 	}
@@ -189,6 +203,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ActivationDate")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getActivationDate() {
 		return activationDate;
 	}
@@ -198,6 +213,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("DeactivationDate")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getDeactivationDate() {
 		return deactivationDate;
 	}
@@ -207,6 +223,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ContractIdentifier")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getContractIdentifier() {
 		return contractIdentifier;
 	}
@@ -225,6 +242,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Reason")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getReason() {
 		return reason;
 	}
