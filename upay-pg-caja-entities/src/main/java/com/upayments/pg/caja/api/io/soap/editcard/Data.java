@@ -2,8 +2,10 @@ package com.upayments.pg.caja.api.io.soap.editcard;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonPropertyOrder({ "BankCode","ContractIdentifier","Reason","ApplRegNumber","EmbossedTitleCode",
 	"EmbossedFirstName","EmbossedLastName","EmbossedCompanyName",
@@ -40,6 +42,7 @@ public class Data implements Serializable {
 	}
 	
 	@JsonProperty("EmbossedTitleCode")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedTitleCode() {
 		return embossedTitleCode;
 	}
@@ -49,6 +52,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedFirstName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedFirstName() {
 		return embossedFirstName;
 	}
@@ -58,6 +62,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedLastName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedLastName() {
 		return embossedLastName;
 	}
@@ -67,6 +72,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("EmbossedCompanyName")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getEmbossedCompanyName() {
 		return embossedCompanyName;
 	}
@@ -76,6 +82,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Afinity")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAfinity() {
 		return afinity;
 	}
@@ -85,6 +92,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo02")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo02() {
 		return addInfo02;
 	}
@@ -94,6 +102,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo03")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo03() {
 		return addInfo03;
 	}
@@ -103,6 +112,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("AddInfo04")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getAddInfo04() {
 		return addInfo04;
 	}
@@ -130,6 +140,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("Reason")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getReason() {
 		return reason;
 	}

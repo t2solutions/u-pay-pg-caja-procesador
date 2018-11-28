@@ -6,23 +6,41 @@
 		<req:BankCode>${body.data.bankCode}</req:BankCode>
 		<req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
 		<!--Optional:-->
+		#if (${body.data.reason}) 
 		<req:Reason>${body.data.reason}</req:Reason>
+		#end
 		<req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+		#if (${body.data.embossedTitleCode}) 
 		<!--Optional:-->
 		<req:EmbossedTitleCode>${body.data.embossedTitleCode}</req:EmbossedTitleCode>
+		#end
+		#if (${body.data.embossedFirstName})
 		<!--Optional:-->
 		<req:EmbossedFirstName>${body.data.embossedFirstName}</req:EmbossedFirstName>
+		#end
+		#if (${body.data.embossedLastName})
 		<!--Optional:-->
 		<req:EmbossedLastName>${body.data.embossedLastName}</req:EmbossedLastName>
+		#end
+		#if (${body.data.embossedCompanyName})
 		<!--Optional:-->
 		<req:EmbossedCompanyName>${body.data.embossedCompanyName}</req:EmbossedCompanyName>
+		#end
+		#if (${body.data.afinity})
 		<!--Optional:-->
 		<req:Afinity>${body.data.afinity}</req:Afinity>
+		#end
+		#if (${body.data.addInfo02})
 		<!--Optional:-->
 		<req:AddInfo02>${body.data.addInfo02}</req:AddInfo02>
+		#end
+		#if (${body.data.addInfo03})
 		<!--Optional:-->
 		<req:AddInfo03>${body.data.addInfo03}</req:AddInfo03>
+		#end
+		#if (${body.data.addInfo04})
 		<!--Optional:-->
 		<req:AddInfo04>${body.data.addInfo04}</req:AddInfo04>
+		#end
 		<req:UserInfo>${body.data.userInfo}</req:UserInfo>	 	
  </req:DATA>
