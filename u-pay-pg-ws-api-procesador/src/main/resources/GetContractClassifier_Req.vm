@@ -5,7 +5,9 @@ xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetClassifierByContract/Req
 	<req:Data>
 	    <req:BankCode>${body.cntByRutReq.data.bankCode}</req:BankCode>
 	    <req:ContractIdentifier>${body.cntByClassReq.data.contractIdentifier}</req:ContractIdentifier>
+	    #if (${body.data.contractRelation})
 	    <req:ContractRelation>${body.cntByClassReq.data.contractRelation}</req:ContractRelation>
+	    #end 
 	    <req:UserInfo>${body.cntByClassReq.data.userInfo}</req:UserInfo>     
 	</req:Data>
 </req:ContractClassifierReq>

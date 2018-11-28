@@ -14,7 +14,7 @@ public class GetContractClassifierRoute extends RestRouteBuilder {
 	@Override
 	public void configure() throws Exception {
 		
-	    rest("/getContractClassifier")
+	    rest("/getClassifierByContract")
 	    	.post("/")
 	    	.description("Servicio para invocar a WS SOAP GetContractClassifier")
 	    	.type(DataInput.class)

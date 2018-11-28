@@ -2,6 +2,8 @@ package com.upayments.pg.caja.api.io.soap.getcontractclassifier;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -39,6 +41,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ContractRelation")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getContractRelation() {
 		return contractRelation;
 	}
