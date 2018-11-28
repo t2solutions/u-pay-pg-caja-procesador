@@ -4,6 +4,8 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetContractByNumber/Req-v2017.10 GetContractByNumber_Req.xsd ">
      <req:BankCode>${body.data.bankCode}</req:BankCode>
      <req:ContractNumber>${body.data.contractNumber}</req:ContractNumber>
+     #if (${body.data.relationType})
      <req:RelationType>${body.data.relationType}</req:RelationType>
+     #end
      <req:UserInfo>${body.data.userInfo}</req:UserInfo>    
 </req:DATA>
