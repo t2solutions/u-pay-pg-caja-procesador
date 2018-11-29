@@ -6,8 +6,10 @@ xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetClassifierByRut/Req-v201
 	    <req:BankCode>${body.cntByClassReq.data.bankCode}</req:BankCode>
 	    <req:ClientIdentifier>${body.cntByClassReq.data.clientIdentifier}</req:ClientIdentifier>
 	    <req:ClientSearchCategory>${body.cntByClassReq.data.clientSearchCategory}</req:ClientSearchCategory>
+	    #if (${body.cntByClassReq.data.contractRelation})  
 	    <!-- Optional -->
 	    <req:ContractRelation>${body.cntByClassReq.data.contractRelation}</req:ContractRelation>
+	    #end
 	    <req:UserInfo>${body.cntByClassReq.data.userInfo}</req:UserInfo>     
 	</req:Data>
 </req:ClientClassifierReq>
