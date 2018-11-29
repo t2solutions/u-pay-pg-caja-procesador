@@ -4,21 +4,33 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/SetClientClassifier/Req-v2017.10 SetClientClassifier_Req.xsd ">
      <req:BankCode>${body.data.bankCode}</req:BankCode>
      <req:ClientIdentifier>${body.data.clientIdentifier}</req:ClientIdentifier>
+     #if (${body.data.contractRelation}) 
      <!--Optional:-->
      <req:ContractRelation>${body.data.contractRelation}</req:ContractRelation>
+     #end 
      <req:Classifier>${body.data.classifier}</req:Classifier>
      <req:Value>${body.data.value}</req:Value>
+     #if (${body.data.dateFrom}) 
      <!--Optional:-->
      <req:DateFrom>${body.data.dateFrom}</req:DateFrom>
+     #end 
+     #if (${body.data.dateTo})  
      <!--Optional:-->
      <req:DateTo>${body.data.dateTo}</req:DateTo>
+     #end 
+     #if (${body.data.reasonCode})   
      <!--Optional:-->
      <req:ReasonCode>${body.data.reasonCode}</req:ReasonCode>
+     #end 
+     #if (${body.data.reason}) 
      <!--Optional:-->
      <req:Reason>${body.data.reason}</req:Reason>
+     #end 
      <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
+     #if (${body.data.applicationSource}) 
      <!--Optional:-->
-     <req:ApplicationSource>?</req:ApplicationSource>
+     <req:ApplicationSource>${body.data.applicationSource}</req:ApplicationSource>
+     #end 
      <req:UserInfo>${body.data.userInfo}</req:UserInfo>
 </req:DATA>
 
