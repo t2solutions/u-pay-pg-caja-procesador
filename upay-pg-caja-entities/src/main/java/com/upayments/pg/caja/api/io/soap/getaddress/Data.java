@@ -2,6 +2,8 @@ package com.upayments.pg.caja.api.io.soap.getaddress;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -32,6 +34,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ContractIdentifier")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getContractIdentifier() {
 		return contractIdentifier;
 	}
@@ -41,6 +44,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ClientIdentifier")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getClientIdentifier() {
 		return clientIdentifier;
 	}
@@ -49,7 +53,7 @@ public class Data implements Serializable {
 		this.clientIdentifier = clientIdentifier;
 	}
 
-	@JsonProperty("ClientSearchCategory")
+	@JsonProperty("ClientSearchCategory")	
 	public String getClientSearchCategory() {
 		return clientSearchCategory;
 	}
@@ -59,6 +63,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ContractRelation")
+	@JsonInclude(Include.NON_DEFAULT)	
 	public String getContractRelation() {
 		return contractRelation;
 	}

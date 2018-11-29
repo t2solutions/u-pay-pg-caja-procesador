@@ -4,13 +4,19 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetAddresses/Req-v2017.10 GetAddresses_Req.xsd ">
 	<req:DATA>		
 		    <req:BankCode>${body.addrReq.data.bankCode}</req:BankCode>
+		    #if (${body.addrReq.data.clientIdentifier})
 		    <!--Optional:-->
 		    <req:ClientIdentifier>${body.addrReq.data.clientIdentifier}</req:ClientIdentifier>
+		    #end 
 		    <req:ClientSearchCategory>${body.addrReq.data.clientSearchCategory}</req:ClientSearchCategory>
+		    #if (${body.addrReq.data.contractIdentifier})
 		    <!--Optional:-->
 		    <req:ContractIdentifier>${body.addrReq.data.contractIdentifier}</req:ContractIdentifier>
+		    #end 
+		    #if (${body.addrReq.data.contractRelation})
 		    <!--Optional:-->
 		    <req:ContractRelation>${body.addrReq.data.contractRelation}</req:ContractRelation>
+		    #end 
 		    <req:UserInfo>${body.addrReq.data.userInfo}</req:UserInfo>
 	 </req:DATA>
  </req:GetAddressesReq>
