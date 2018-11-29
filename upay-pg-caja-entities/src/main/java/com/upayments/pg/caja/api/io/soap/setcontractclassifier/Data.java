@@ -7,33 +7,15 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
-@JsonPropertyOrder({ "BankCode", "ContractIdentifier", "Classifier",
-	"Value", "DateFrom", "DateTo", "Reason", "ApplRegNumber", "UserInfo"})
+@JsonPropertyOrder({ "BankCode", "ClientIdentifier", "ContractRelation", "Classifier",
+	"Value", "DateFrom", "DateTo", "ReasonCode", "Reason", "ApplRegNumber", "ApplicationSource", "UserInfo"})
 public class Data implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	/*
-    <req:BankCode>?</req:BankCode>
-    <req:ContractIdentifier>?</req:ContractIdentifier>
-    <req:Classifier>?</req:Classifier>
-    <!--Optional:-->
-    <req:Value>?</req:Value>
-    <!--Optional:-->
-    <req:DateFrom>?</req:DateFrom>
-    <!--Optional:-->
-    <req:DateTo>?</req:DateTo>
-    <!--Optional:-->
-    <req:Reason>?</req:Reason>
-    <req:ApplRegNumber>?</req:ApplRegNumber>
-    <req:UserInfo>?</req:UserInfo>
- </req:DATA>
-    */
-	
 	private String bankCode;
 	private String contractIdentifier; //	
 	private String classifier;
-	
 	private String value;
 	private String dateFrom;
 	private String dateTo;

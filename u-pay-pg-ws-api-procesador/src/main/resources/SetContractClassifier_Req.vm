@@ -5,14 +5,22 @@ xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/SetContractClassifier/Req-v
 	 <req:BankCode>${body.data.bankCode}</req:BankCode>
 	 <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
 	 <req:Classifier>${body.data.classifier}</req:Classifier>
+	 #if (${body.data.value})  
 	 <!--Optional:-->
 	 <req:Value>${body.data.value}</req:Value>
+	 #end 
+	 #if (${body.data.dateFrom})  
 	 <!--Optional:-->
 	 <req:DateFrom>${body.data.dateFrom}</req:DateFrom>
+	 #end 
+	 #if (${body.data.dateTo})  
 	 <!--Optional:-->
 	 <req:DateTo>${body.data.dateTo}</req:DateTo>
+	 #end 
+	 #if (${body.data.reason})  
 	 <!--Optional:-->
 	 <req:Reason>${body.data.reason}</req:Reason>
+	 #end 
 	 <req:ApplRegNumber>${body.data.applRegNumber}</req:ApplRegNumber>
 	 <req:UserInfo>${body.data.userInfo}</req:UserInfo>
 </req:DATA>
