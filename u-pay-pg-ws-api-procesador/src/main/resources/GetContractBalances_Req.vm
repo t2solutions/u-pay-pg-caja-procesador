@@ -5,8 +5,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://xsd.nexuschile.cl/Prepaid/GetContractBalances/Req-v2017.10 GetContractBalances_Req.xsd ">
      <req:BankCode>${body.data.bankCode}</req:BankCode>
      <req:ContractIdentifier>${body.data.contractIdentifier}</req:ContractIdentifier>
+     #if (${body.data.currency})
      <!--Optional:-->
      <req:Currency>${body.data.currency}</req:Currency>
+     #end 
      <req:BalanceList>${body.data.balanceList}</req:BalanceList>
      <req:UserInfo>?</req:UserInfo>
 </req:DATA>
