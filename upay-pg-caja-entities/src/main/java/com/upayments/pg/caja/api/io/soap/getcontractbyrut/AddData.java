@@ -9,33 +9,33 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonPropertyOrder({ "Institution", "InstitutionDesc", "Branch", "BranchDesc", 
 	"ClientCategory", "ClientCategoryDesc", "ClientType", "ClientTypeDesc", "ReportType",
-	"Role", "Leaf", "Client", "ID", "ClientFullName", "AddInfo01", "AddInfo02", "AddInfo03", 
-	"AddInfo04", "BehaviourGroup", "BehaviourType", "EnablesItem"})
+	"Role", "Leaf", "Client", "ID", "EnablesItem", "AddInfo01", "AddInfo02", "AddInfo03", 
+	"AddInfo04", "BehaviourGroup", "BehaviourType", "ClientFullName"})
 public class AddData implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private String institution; //
-	private String institutionDesc; //
-	private String branch; //
-	private String branchDesc; //
-	private String clientCategory; //
-	private String clientCategoryDesc; //;
-	private String clientType; //
-	private String clientTypeDesc; //
-	private String reportType; //
-	private String role; //
-	private String leaf; //
-	private String client; //
-	private String id; //
-	private String clientFullName; //
-	private String addInfo01; //
-	private String addInfo02; //
-	private String addInfo03; //
-	private String addInfo04; //
-	private String behaviourGroup; //
-	private String behaviourType; //
-	private String enablesItem; //
+	private String institution; 
+	private String institutionDesc; 
+	private String branch; 
+	private String branchDesc; 
+	private String clientCategory; 
+	private String clientCategoryDesc;
+	private String clientType; 
+	private String clientTypeDesc; 
+	private String reportType; 
+	private String role; 
+	private String leaf; 
+	private String client; 
+	private String id; 
+	private String clientFullName; 
+	private String addInfo01; 
+	private String addInfo02; 
+	private String addInfo03; 
+	private String addInfo04; 
+	private String behaviourGroup; 
+	private String behaviourType; 
+	private String enablesItem; 
 	
 	public AddData() {
 		super();

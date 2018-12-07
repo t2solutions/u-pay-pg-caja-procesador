@@ -8,18 +8,21 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonPropertyOrder({ "Available", "Balance", "CreditLimit", "AddLimit", "Blocked", 
-	"TotalDue", "PastDue" })
+	"TotalDue", "PastDue", "CreditLimitUSD", "AvailableUSD", "BalanceUSD" })
 public class BalancesData implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private String available;  //
-	private String balance; //
-	private String creditLimit; //
-	private String addLimit; //
-	private String blocked; //
-	private String totalDue; //
-	private String pastDue; //
+	private String available;  
+	private String balance; 
+	private String creditLimit; 
+	private String addLimit; 
+	private String blocked; 
+	private String totalDue; 
+	private String pastDue; 
+	private String creditLimitUSD;
+	private String availableUSD;
+	private String balanceUSD;
 	
 	public BalancesData() {
 		super();
@@ -90,9 +93,39 @@ public class BalancesData implements Serializable {
 	public String getPastDue() {
 		return pastDue;
 	}
-
+	
 	public void setPastDue(String pastDue) {
 		this.pastDue = pastDue;
+	}
+
+	@JsonProperty("CreditLimitUSD")
+	@JsonInclude(Include.NON_DEFAULT)		
+	public String getCreditLimitUSD() {
+		return creditLimitUSD;
+	}
+
+	public void setCreditLimitUSD(String creditLimitUSD) {
+		this.creditLimitUSD = creditLimitUSD;
+	}
+
+	@JsonProperty("AvailableUSD")
+	@JsonInclude(Include.NON_DEFAULT)	
+	public String getAvailableUSD() {
+		return availableUSD;
+	}
+
+	public void setAvailableUSD(String availableUSD) {
+		this.availableUSD = availableUSD;
+	}
+
+	@JsonProperty("BalanceUSD")
+	@JsonInclude(Include.NON_DEFAULT)	
+	public String getBalanceUSD() {
+		return balanceUSD;
+	}
+
+	public void setBalanceUSD(String balanceUSD) {
+		this.balanceUSD = balanceUSD;
 	}
 
 }

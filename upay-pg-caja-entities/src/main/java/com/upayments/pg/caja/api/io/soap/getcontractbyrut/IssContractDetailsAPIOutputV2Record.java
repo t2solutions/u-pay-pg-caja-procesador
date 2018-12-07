@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonPropertyOrder({ "ContractData", "BalancesData", "AddData" })
-public class IssContractDetailsAPIOutputRecord implements Serializable {
+public class IssContractDetailsAPIOutputV2Record implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -14,7 +14,7 @@ public class IssContractDetailsAPIOutputRecord implements Serializable {
 	private BalancesData balancesData;	
 	private AddData addData;
 	
-	public IssContractDetailsAPIOutputRecord() {
+	public IssContractDetailsAPIOutputV2Record() {
 		super();
 	}
 	
@@ -43,6 +43,6 @@ public class IssContractDetailsAPIOutputRecord implements Serializable {
 	
 	public void setBalancesData(BalancesData clientData) {
 		this.balancesData = clientData;
-	}
-	
+	}	
+
 }

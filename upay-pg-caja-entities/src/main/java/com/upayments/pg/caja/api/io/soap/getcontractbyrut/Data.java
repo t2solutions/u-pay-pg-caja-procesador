@@ -2,6 +2,8 @@ package com.upayments.pg.caja.api.io.soap.getcontractbyrut;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
@@ -39,6 +41,7 @@ public class Data implements Serializable {
 	}
 
 	@JsonProperty("ClientSearchCategory")
+	@JsonInclude(Include.NON_DEFAULT)
 	public String getClientSearchCategory() {
 		return clientSearchCategory;
 	}
