@@ -5,14 +5,14 @@ import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.upayments.pg.caja.api.io.soap.EmptyHeaderRequest;
+import com.upayments.pg.caja.api.io.soap.HeaderRequest;
 
 @JsonPropertyOrder({ "Header", "GetContractByRutReq" })
 public class DataInput implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
-	private EmptyHeaderRequest header;
+	private HeaderRequest header;
 	private GetContractByRutReq cntByRutReq;
 
 	public DataInput() {
@@ -20,10 +20,10 @@ public class DataInput implements Serializable {
 	}
 
 	@JsonProperty("Header")
-	public EmptyHeaderRequest getHeader() {
+	public HeaderRequest getHeader() {
 		return header;
 	}
-	public void setHeader(EmptyHeaderRequest header) {
+	public void setHeader(HeaderRequest header) {
 		this.header = header;
 	}
 	
