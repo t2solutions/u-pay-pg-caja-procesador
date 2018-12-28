@@ -1,0 +1,7 @@
+<Available><xsl:value-of select="resp:Available" /></Available>
+<Balance><xsl:value-of select="resp:Balance" /></Balance>
+<CreditLimit><xsl:value-of select="resp:CreditLimit" /></CreditLimit>
+<AddLimit><xsl:value-of select="resp:AddLimit" /></AddLimit>
+<Blocked><xsl:value-of select="resp:Blocked" /></Blocked>
+<TotalDue><xsl:value-of select="resp:TotalDue" /></TotalDue>
+<PastDue><xsl:value-of select="resp:PastDue" /></PastDue>
