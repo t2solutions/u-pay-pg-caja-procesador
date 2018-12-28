@@ -28,12 +28,13 @@
 	</properties>
 
 	<dependencies>
+		<!-- 
 		<dependency>
 			<groupId>com.upayment.pg.caja</groupId>
 			<artifactId>u-pay-pg-caja-entities</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-			
+			-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -53,7 +54,8 @@
 			<artifactId>cxf-rt-transports-http-jetty</artifactId>
 			<version>3.1.8</version>
 		</dependency>
-
+		
+		<!-- 
 		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>spring-boot-admin-starter-client</artifactId>
@@ -64,6 +66,7 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 			<version>1.4.5.RELEASE</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>
